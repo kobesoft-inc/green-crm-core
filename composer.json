@@ -1,10 +1,20 @@
 {
-  "name": "kobesoft/green-crm-core",
-  "type": "library",
-  "autoload": {
-    "psr-4": {
-      "Green\\CrmCore\\": "src/"
+    "name": "kobesoft/green-crm-core",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Green\\CrmCore\\": "src/"
+        }
+    },
+    "require": {
+        "filament/filament": "^3.3",
+        "awcodes/filament-table-repeater": "^3.1"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Green\\CrmCore\\GreenCrmCoreServiceProvider"
+            ]
+        }
     }
-  },
-  "require": {}
 }
